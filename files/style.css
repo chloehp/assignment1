@@ -1,0 +1,144 @@
+/*
+fonts used::::
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inconsolata', monospace;
+*/
+
+/*Inconsolata (from google fonts) is set as the primary font. Light grey is set as the overall background.
+Margin 0 Padding 0 fixes some problems where the elements don't stretch all the way accross the
+page when it should do.*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    background: #f5f5f5;
+}
+
+/*Flex wrap is used to create a header that, when viewed on a phone, is aligned vertically; but
+when viewed on a desktop is aligned so that the title and picture are side by side.*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1vh;
+    width: 100%;
+    background: white;
+}
+
+/*The title is a link, this takes away the link underline and link colour.*/
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+/*I used vh and vw as units a lot in the header so that they are dynamically sized and look good no matter
+the zoom and size of the screen. Since they are already large in size, there is no necessity for
+being able to zoom in on them.*/
+.profilepic{
+     border: 1.5vh solid #c5c5c5;
+     border-radius: 100%;
+     width: 22vh;
+     height: 22vh;
+     margin: 1.5vh 3vh -2vh;
+}
+
+/*The Quicksand font (from google fonts) is used as the title.*/
+.profiletitle{
+    border-top: 3px solid;
+    border-left: 3px solid;
+    width: 21vh;
+    height: 21vh;
+    margin: 3vh;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 47vh;
+    background: #e5e5e5;
+}
+
+/*Scrollable box with that contains the main contents of the website.
+ It has a fun pink, blue and white background. 
+
+ It's all contained within the div "container" which allows its independant scrolling to work - 
+ In all the desktop versions of the site the header and footer are always visible while the main
+ contents can be scrolled through independantly.
+ In all the mobile versions of the site, you use your thumb to scroll on the main contents to
+ look through it whilst the header remains at the top of the page, or use your thumb on the
+ header to show or hide the footer.
+ 
+ I used grid type display for positioning.*/
+.page{
+    display: grid;
+    grid-template: 0.1fr 1fr 1fr 1fr 0.1fr / 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-gap: 20px;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    margin: 1.5%;
+    overflow: auto;
+    text-align: center;
+    background: url(back.png);
+    background-attachment: fixed;
+      }
+
+/*Sets the border and background of the boxes that contain the website's contents.
+(I called them "tapboxes")*/
+.tapbox{
+    border: solid 3px;
+    background: white;
+}
+/*Sets size and margins of the icons as a percentage of the screen's vertical height*/
+.tapbox a img{width: 6vh;margin: 1vh 0.1vh;}
+/*When the user hovers over a tapbox, it is surrounded by a grey outline.*/
+.tapbox:hover{outline: 1.5vh solid #c5c5c5;}
+
+/*Grid areas for the tapboxes on the index page, index.html*/
+.tb1{grid-area: 2 / 3 / span 2 / span 1;}
+.tb2{grid-area: 2 / 4 / span 2 / span 1;}
+.tb3{grid-area: 4 / 3 / span 1 / span 1;}
+.tb4{grid-area: 4 / 4 / span 1 / span 1;}
+
+/*Grid areas for the tapboxes on the cv page, cv.html*/
+.tb5{grid-area: 2 / 3 / span 1 / span 1;}
+.tb6{grid-area: 2 / 4 / span 1 / span 1;}
+.tb7{grid-area: 3 / 2 / 4 / span 4;}
+.tb7 img{width: 30vh;}
+
+/*I used flex wrap to display the footer.
+
+On desktop sites the whole of the footer is visible
+
+On mobile sites, when the footer is brought up, the user can scroll the footer left and right
+to see the whole thing.*/
+footer{
+    display: flex;
+    align-content: space-between;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 120px;
+    margin: 2.5vh 0 -1vh;
+    overflow: auto;
+    font-size: smaller;
+    outline: 2vh solid #f5f5f5;
+}
+footer article{margin: 10px;}
+
+/*The sitemap uses a grid typed display.*/
+.sitemap ul{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    height: 80px;
+    background: #e5e5e5;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+/*When the user hovers their cursor over the elements in the sitemap, the text goes bold.*/
+.sitemap li:hover{font-weight: bold;}

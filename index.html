@@ -1,0 +1,87 @@
+<!--This is the index page for my website, it contains a correctly sized photo of me in the header, 
+several links to external sites, the link to the other pages in this website, and a nav 
+element with links to all associated files.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chloe HP</title>
+    <link rel="stylesheet" href="files/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<!--Below is the title and my picture that will display at the top of the screen. In the mobile version
+they are set vertically, the desktop version theyre set horizontally.-->
+    <header>
+        <a href="index.html"><img class="profilepic" src="images/me.jpg" alt="Photograph of me"></a>
+        <a href="index.html"><h1 class="profiletitle">CHLOE<br>HUGHES-<br>PENZER</h1></a>
+    </header>
+<!--The main contents of the page is in a scrollable box in the middle of the screen,
+in the mobile site this takes up the lower half of the screen. -->
+    <div class="container">
+        <div class="page">
+            <article class="tapbox tb1">
+                <p><b>Hi, I'm Chloe!</b>
+                     I'm a IT student currently studying at UON.
+                   <br> This is my portfolio site designed for Assignment 1
+                    of my Web developement module.
+                </p>
+            </article>
+<!--Three links to external sites: GitHub, Twitter, and LinkedIn. The icons used for
+links are .svg vectors to keep the size of the file low and the quality high.
+
+The icon links also have titles so if the user doesn't know what the icon is they can hover
+the curser over it the title will say where the link will take them if they click it.
+
+I have set target _blank which will open the link in a new tab when clicked.-->
+            <article class="tapbox tb2">
+                <a href="portfolio.html"><p><b>My portfolio</b></p></a>
+            </article>
+<!--Link to internal page that has my 200 word report on it. Target left to default because
+I would want the link to open in the same tab.-->
+            <article class="tapbox tb3">
+                <a href="cv.html"><p><b>My CV</b></p></a>
+            </article>
+            <article class="tapbox tb4">
+                <a href="contact.html"><p><b>Contact me!</b></p></a>
+            </article>
+        </div>
+    </div>
+<!--The footer just contains some details about this assignment and the site map-->
+    <footer>
+        <article>
+            <p>Chloe Hughes-Penzer</p>
+        </article>
+        <article>
+            <p>18411538</p>
+        </article>
+        <article>
+            <p>19/20 Web Dev (CSY1018-STD)</p>
+        </article>
+        <article>
+            <p>University of Northampton</p>
+        </article>
+<!--The sitemap is set out as an unordered list in a navigation element, this contains links
+to both the pages of the site plus all the complimentary files for this assignment-->
+        <nav class="sitemap">
+            <ul>
+                <b>Site map and files:</b><li></li>
+                <li>
+                    <a href="index.html">index.html</a>
+                </li>
+                <li>
+                    <a href="report.html">report.html</a>
+                </li>
+                <li>
+                    <a href="styles/main.css">styles/main.css</a>
+                </li>
+                <li>
+                    <a href="report.docx">report.docx</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
