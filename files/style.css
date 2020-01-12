@@ -71,20 +71,7 @@ being able to zoom in on them.*/
  header to show or hide the footer.
  
  I used grid type display for positioning.*/
-.page{
-    display: grid;
-    grid-template: 0.1fr 1fr 1fr 1fr 0.1fr / 1fr 1fr 2fr 2fr 1fr 1fr;
-    grid-gap: 20px;
-    border-radius: 15px;
-    width: 90%;
-    height: auto;
-    margin: 1.5%;
-    overflow: auto;
-    text-align: center;
-    background: url(back.png);
-    background-attachment: fixed;
-      }
-
+ 
 /*Sets the border and background of the boxes that contain the website's contents.
 (I called them "tapboxes")*/
 .tapbox{
@@ -96,31 +83,72 @@ being able to zoom in on them.*/
 /*When the user hovers over a tapbox, it is surrounded by a grey outline.*/
 .tapbox:hover{outline: 1.5vh solid #c5c5c5;}
 
-/*Grid areas for the tapboxes on the index page, index.html*/
-.tb1{grid-area: 2 / 3 / span 2 / span 1;}
-.tb2{grid-area: 2 / 4 / span 2 / span 1;}
-.tb3{grid-area: 4 / 3 / span 1 / span 1;}
-.tb4{grid-area: 4 / 4 / span 1 / span 1;}
 
-/*Grid areas for the tapboxes on the cv page, cv.html*/
-.tb5{grid-area: 2 / 3 / span 1 / span 1;}
-.tb6{grid-area: 2 / 4 / span 1 / span 1;}
-.tb7{grid-area: 3 / 2 / 4 / span 4;}
-.tb7 img{width: 30vh;}
+@media only screen and (min-width: 900px) {
 
-/*Grid areas for the tapboxes on the contact page*/
-.tb8{grid-area: 2 / 3 / span 1 / span 2;}
-.tb9{grid-area: 3 / 3 / span 1 / span 1;}
-.tb10{grid-area: 3 / 4 / span 1 / span 1;}
-.tb11{grid-area: 4 / 3 / span 1 / span 1;}
-.tb12{grid-area: 4 / 4 / span 1 / span 1;}
+    .page{
+        display: grid;
+        grid-template: 0.1fr 1fr 1fr 1fr 0.1fr / 1fr 1fr 2fr 2fr 1fr 1fr;
+        grid-gap: 20px;
+        border-radius: 15px;
+        width: 90%;
+        height: auto;
+        margin: 1.5%;
+        overflow: auto;
+        text-align: center;
+        background: url(back.png);
+        background-attachment: fixed;
+        }
 
-/*Grid areas for the tapboxes on the portfolio*/
-.tb14{grid-area: 2 / 3 / span 6 / span 1;}
-.tb15{grid-area: 2 / 4 / span 2 / span 1;}
-.tb16{grid-area: 4 / 4 / span 4  / span 2;}
-.tb17{grid-area: 2 / 2 / span 6  / span 1;}
-.tb18{grid-area: 2 / 5 / span 2 / span 1;}
+    /*Grid areas for the tapboxes on the index page, index.html*/
+    .tb1{grid-area: 2 / 3 / span 2 / span 1;}
+    .tb2{grid-area: 2 / 4 / span 2 / span 1;}
+    .tb3{grid-area: 4 / 3 / span 1 / span 1;}
+    .tb4{grid-area: 4 / 4 / span 1 / span 1;}
+
+    /*Grid areas for the tapboxes on the cv page, cv.html*/
+    .tb5{grid-area: 2 / 3 / span 1 / span 1;}
+    .tb6{grid-area: 2 / 4 / span 1 / span 1;}
+    .tb7{grid-area: 3 / 2 / 4 / span 4;}
+    .tb7 img{width: 30vh;}
+
+    /*Grid areas for the tapboxes on the contact page*/
+    .tb8{grid-area: 2 / 3 / span 1 / span 2;}
+    .tb9{grid-area: 3 / 3 / span 1 / span 1;}
+    .tb10{grid-area: 3 / 4 / span 1 / span 1;}
+    .tb11{grid-area: 4 / 3 / span 1 / span 1;}
+    .tb12{grid-area: 4 / 4 / span 1 / span 1;}
+
+    /*Grid areas for the tapboxes on the portfolio*/
+    .tb14{grid-area: 2 / 3 / span 6 / span 1;}
+    .tb15{grid-area: 2 / 4 / span 2 / span 1;}
+    .tb16{grid-area: 4 / 4 / span 4  / span 2;}
+    .tb17{grid-area: 2 / 2 / span 6  / span 1;}
+    .tb18{grid-area: 2 / 5 / span 2 / span 1;}
+}
+
+
+@media only screen and (max-width: 900px) {
+    .page{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border-radius: 15px;
+        width: 90%;
+        height: auto;
+        margin: 1.5%;
+        overflow: auto;
+        text-align: center;
+        background: url(back.png);
+        background-attachment: fixed;
+        }
+
+        .tapbox{
+            width: 80vw;
+            margin: 15px;
+        }
+}
+
 
 /*I used flex wrap to display the footer.
 On desktop sites the whole of the footer is visible
