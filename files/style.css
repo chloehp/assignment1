@@ -25,11 +25,6 @@ header{
     background: white;
 }
 
-@media only screen and (max-width: 500px) {
-    header{
-        flex-direction: column;
-    }
-}
 
 /*The title is a link, this takes away the link underline and link colour.*/
 header a{
@@ -49,14 +44,28 @@ being able to zoom in on them.*/
 }
 
 /*The Quicksand font (from google fonts) is used as the title.*/
-.profiletitle{
-    border-top: 3px solid;
-    border-left: 3px solid;
-    width: 21vh;
-    height: 21vh;
-    margin: 3vh;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 6vh;
+@media only screen and (min-width: 500px) {
+    .profiletitle{
+        border-top: 4px solid;
+        border-left: 4px solid;
+        width: 21vh;
+        height: 21vh;
+        margin: 3vh;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 6vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profiletitle{
+        border-top: 3px solid;
+        border-left: 3px solid;
+        width: 21vh;
+        height: 21vh;
+        margin: 4vh 200vw 2vh;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 6vh;
+    }
 }
 
 .container{
