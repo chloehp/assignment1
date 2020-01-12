@@ -3,6 +3,8 @@ fonts used::::
     font-family: 'Quicksand', sans-serif;
     font-family: 'Inconsolata', monospace;
     font-family: 'Lobster', cursive;
+
+These are all from Google fonts.
 */
 
 /*Inconsolata (from google fonts) is set as the primary font. Light grey is set as the overall background.
@@ -61,7 +63,8 @@ being able to zoom in on them.*/
         font-size: 6vh;
     }
 }
-/**/
+/*On desktop and tablet the title and my picture are side by side, on a mobile
+they're aligned vertically instead*/
 @media only screen and (max-width: 500px) {
     .profiletitle{
         border-top: 3px solid;
@@ -147,7 +150,8 @@ being able to zoom in on them.*/
     .tb18{grid-area: 2 / 5 / span 2 / span 1;}
 }
 
-
+/*Mobile and tablet versions of the site now use flexbox instead of grid to display the
+contents of each page*/
 @media only screen and (max-width: 900px) {
     .page{
         display: flex;
