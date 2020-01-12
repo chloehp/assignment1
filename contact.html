@@ -1,0 +1,88 @@
+<!--This is the index page for my website, it contains a correctly sized photo of me in the header, 
+several links to external sites, the link to the other pages in this website, and a nav 
+element with links to all associated files.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chloe HP</title>
+    <link rel="stylesheet" href="files/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<!--Below is the title and my picture that will display at the top of the screen. In the mobile version
+they are set vertically, the desktop version theyre set horizontally.-->
+    <header>
+        <a href="index.html"><img class="profilepic" src="images/me.jpg" alt="Photograph of me"></a>
+        <a href="index.html"><h1 class="profiletitle">CHLOE<br>HUGHES-<br>PENZER</h1></a>
+    </header>
+<!--The main contents of the page is in a scrollable box in the middle of the screen,
+in the mobile site this takes up the lower half of the screen. -->
+    <div class="container">
+        <div class="page">
+            <article class="tapbox tb8">
+                <p>This is my contact page, it contains links to my GitHub,
+                    LinkedIn and Twitter, as well as my email address. To get back
+                    to the landing page
+                    <a href="index.html">click here</a>.
+                </p>
+            </article>
+            <article class="tapbox tb9">
+                <p>My email address is: <b>chloe.hughespenzer@gmail.com</b></p>
+            </article>
+<!--Three links to external sites: GitHub, Twitter, and LinkedIn. The icons used for
+links are .svg vectors to keep the size of the file low and the quality high.
+
+The icon links also have titles so if the user doesn't know what the icon is they can hover
+the curser over it the title will say where the link will take them if they click it.
+
+I have set target _blank which will open the link in a new tab when clicked.-->
+            <article class="tapbox tb10">
+                <a href="https://github.com/chloehp" target="_blank"><img src="images/github.svg" alt="GitHub logo" title="Go to my GitHub"></a>
+            </article>
+            <article class="tapbox tb11">
+                <a href="https://twitter.com/HPChloe" target="_blank"><img src="images/twitter.svg" alt="Twitter logo" title="Go to my Twitter"></a>
+            </article>
+            <article class="tapbox tb12">
+                <a href="https://www.linkedin.com/in/chloe-hp-358097198/" target="_blank"><img src="images/linkd.svg" alt="LinkedIn logo" title="Go to my LinkedIn"></a>
+            </article>
+        </div>
+    </div>
+<!--The footer just contains some details about this assignment and the site map-->
+    <footer>
+        <article>
+            <p>Chloe Hughes-Penzer</p>
+        </article>
+        <article>
+            <p>18411538</p>
+        </article>
+        <article>
+            <p>19/20 Web Dev (CSY1018-STD)</p>
+        </article>
+        <article>
+            <p>University of Northampton</p>
+        </article>
+<!--The sitemap is set out as an unordered list in a navigation element, this contains links
+to both the pages of the site-->
+        <nav class="sitemap">
+            <ul>
+                <b>Site map:</b><li></li>
+                <li>
+                    <a href="index.html">index.html</a>
+                </li>
+                <li>
+                    <a href="cv.html">cv.html</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact.html</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">portfolio.html</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

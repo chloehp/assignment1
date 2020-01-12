@@ -109,6 +109,13 @@ being able to zoom in on them.*/
 .tb7{grid-area: 3 / 2 / 4 / span 4;}
 .tb7 img{width: 30vh;}
 
+/*Grid areas for the tapboxes on the contact page*/
+.tb8{grid-area: 2 / 3 / span 1 / span 2;}
+.tb9{grid-area: 3 / 3 / span 1 / span 1;}
+.tb10{grid-area: 3 / 4 / span 1 / span 1;}
+.tb11{grid-area: 4 / 3 / span 1 / span 1;}
+.tb12{grid-area: 4 / 4 / span 1 / span 1;}
+
 /*I used flex wrap to display the footer.
 
 On desktop sites the whole of the footer is visible
