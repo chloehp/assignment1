@@ -25,6 +25,12 @@ header{
     background: white;
 }
 
+@media only screen and (max-width: 500px) {
+    header{
+        flex-direction: column;
+    }
+}
+
 /*The title is a link, this takes away the link underline and link colour.*/
 header a{
     color: black;
@@ -85,7 +91,6 @@ being able to zoom in on them.*/
 
 
 @media only screen and (min-width: 900px) {
-
     .page{
         display: grid;
         grid-template: 0.1fr 1fr 1fr 1fr 0.1fr / 1fr 1fr 2fr 2fr 1fr 1fr;
