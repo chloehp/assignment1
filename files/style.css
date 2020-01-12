@@ -63,7 +63,6 @@ being able to zoom in on them.*/
 
 /*Scrollable box with that contains the main contents of the website.
  It has a fun pink, blue and white background. 
-
  It's all contained within the div "container" which allows its independant scrolling to work - 
  In all the desktop versions of the site the header and footer are always visible while the main
  contents can be scrolled through independantly.
@@ -116,10 +115,15 @@ being able to zoom in on them.*/
 .tb11{grid-area: 4 / 3 / span 1 / span 1;}
 .tb12{grid-area: 4 / 4 / span 1 / span 1;}
 
+/*Grid areas for the tapboxes on the portfolio*/
+.tb14{grid-area: 2 / 3 / span 6 / span 1;}
+.tb15{grid-area: 2 / 4 / span 2 / span 1;}
+.tb16{grid-area: 4 / 4 / span 4  / span 2;}
+.tb17{grid-area: 2 / 2 / span 6  / span 1;}
+.tb18{grid-area: 2 / 5 / span 2 / span 1;}
+
 /*I used flex wrap to display the footer.
-
 On desktop sites the whole of the footer is visible
-
 On mobile sites, when the footer is brought up, the user can scroll the footer left and right
 to see the whole thing.*/
 footer{
